@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+    background-image: url('/home/background-home-mobile.jpg');
+    /* Default for small screens (mobile) */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+    main {
+        background-image: url('/home/background-home-tablet.jpg');
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    main {
+        background-image: url('/home/background-home-desktop.jpg');
+    }
+}
